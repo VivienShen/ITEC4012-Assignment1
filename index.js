@@ -14,6 +14,7 @@ app.get('/', (req, res) => {
     res.send("Hi from the express server!");
 });
 
+//Coffee API route
 app.get('/api/coffee', (req, res) => {
 
     //call to database
@@ -34,9 +35,22 @@ app.get('/api/coffee', (req, res) => {
     res.send(JSON.stringify(coffee));
 });
 
+//Tea API route 
 app.get('/api/tea', (req, res) => {
 
     //call to database
+    
+    //return dummy data
+    const tea = ["Fact 1. Tea is good for you.",
+     "Fact 2. It takes around 2,000 tiny leaves to make just one pound of finished tea.", 
+     "Fact 3. You should never use boiling water for tea as you'll burn the leaf.", 
+     "Fact 4. Teabags were invented in the early 1900s.",
+     "Fact 5. Do you store your tea near your coffee or in your spice cabinet? Don’t.", 
+     "Fact 6. Earl Grey tea was named after the actual Earl Grey.", 
+     "Fact 7. Black tea can affect iron absorption.", 
+     "Fact 8. Tea is a diuretic – it makes you need to urinate.",
+     "Fact 9. There are around 3,000 different types of tea.",
+     "Fact 10. The leaves from the Raspberry plant can be steeped to produce a Herbal Tea."]
     
     //Sending a response
     res.send(JSON.stringify(tea));
