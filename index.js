@@ -41,7 +41,7 @@ app.get('/api/tea', (req, res) => {
     //call to database
     
     //return dummy data
-    const tea = ["Fact 1. Tea is good for you.",
+    const tea = ["Fact 0. Tea is good for you.",
      "Fact 2. It takes around 2,000 tiny leaves to make just one pound of finished tea.", 
      "Fact 3. You should never use boiling water for tea as you'll burn the leaf.", 
      "Fact 4. Teabags were invented in the early 1900s.",
